@@ -12,38 +12,42 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: IAM
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-pub-sub/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Cloud Pub/Sub API Get IAM Policy
-  x-api-slug: google-cloud-pubsub-api
+- name: Google Cloud Pub/Sub - Get IAM Policy
+  x-api-slug: v1resourcegetiampolicy-get
   description: |-
     Gets the access control policy for a resource.
     Returns an empty policy if the resource exists and does not have a policy
     set.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-pub-sub-middleware.png
   humanURL: https://cloud.google.com/pubsub/docs/
-  baseURL: ://pubsub.googleapis.com////v1/{resource}:getIamPolicy
-  tags: IAM
+  baseURL: ://pubsub.googleapis.com//
+  tags: Real Time, Google APIs, Internet of Things, Stack Network, Real Time, Event-Driven,
+    API Service Provider, API Provider, Messages, Profiles, Relative Data, Service
+    API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-pub-sub/v1resourcegetiampolicy-get-openapi.md
-- name: Google Cloud Pub/Sub API Set IAM Policy
-  x-api-slug: google-cloud-pubsub-api
+- name: Google Cloud Pub/Sub - Set IAM Policy
+  x-api-slug: v1resourcesetiampolicy-post
   description: |-
     Sets the access control policy on the specified resource. Replaces any
     existing policy.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-pub-sub-middleware.png
   humanURL: https://cloud.google.com/pubsub/docs/
-  baseURL: ://pubsub.googleapis.com////v1/{resource}:setIamPolicy
-  tags: IAM
+  baseURL: ://pubsub.googleapis.com//
+  tags: Real Time, Google APIs, Internet of Things, Stack Network, Real Time, Event-Driven,
+    API Service Provider, API Provider, Messages, Profiles, Relative Data, Service
+    API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-pub-sub/v1resourcesetiampolicy-post-openapi.md
-- name: Google Cloud Pub/Sub API Test IAM Permission
-  x-api-slug: google-cloud-pubsub-api
+- name: Google Cloud Pub/Sub - Test IAM Permission
+  x-api-slug: v1resourcetestiampermissions-post
   description: |-
     Returns permissions that a caller has on the specified resource.
     If the resource does not exist, this will return an empty set of
@@ -54,23 +58,18 @@ apis:
     may "fail open" without warning.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-pub-sub-middleware.png
   humanURL: https://cloud.google.com/pubsub/docs/
-  baseURL: ://pubsub.googleapis.com////v1/{resource}:testIamPermissions
-  tags: IAM
+  baseURL: ://pubsub.googleapis.com//
+  tags: Real Time, Google APIs, Internet of Things, Stack Network, Real Time, Event-Driven,
+    API Service Provider, API Provider, Messages, Profiles, Relative Data, Service
+    API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-pub-sub/v1resourcetestiampermissions-post-openapi.md
-- name: Google Cloud Pub/Sub API
-  x-api-slug: google-cloud-pubsub-api
-  description: Google Cloud Pub/Sub is a fully-managed real-time messaging service
-    that allows you to send and receive messages between independent applications.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-pub-sub-middleware.png
-  humanURL: https://cloud.google.com/pubsub/docs/
-  baseURL: ://pubsub.googleapis.com//
-  tags: IAM
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-pub-sub/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://google.cloud.prediction.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://google.cloud.pub.sub.stack.network
 - type: x-change-log
   url: https://cloud.google.com/pubsub/docs/release-notes
 - type: x-code

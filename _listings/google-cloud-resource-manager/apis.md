@@ -11,25 +11,26 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: IAM
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-resource-manager/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Cloud Resource Manager API Get IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Get IAM Policy
+  x-api-slug: v1projectsresourcegetiampolicy-post
   description: |-
     Returns the IAM access control policy for the specified Project.
     Permission is denied if the policy or the resource does not exist.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{resource}:getIamPolicy
-  tags: IAM
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-resource-manager/v1projectsresourcegetiampolicy-post-openapi.md
-- name: Google Cloud Resource Manager API Set IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Set IAM Policy
+  x-api-slug: v1projectsresourcesetiampolicy-post
   description: |-
     Sets the IAM access control policy for the specified Project. Replaces
     any existing policy.
@@ -71,37 +72,28 @@ apis:
     roles.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{resource}:setIamPolicy
-  tags: IAM
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-resource-manager/v1projectsresourcesetiampolicy-post-openapi.md
-- name: Google Cloud Resource Manager API Test IAM Policy
-  x-api-slug: google-cloud-resource-manager-api
+- name: Google Cloud Resource Manager - Test IAM Policy
+  x-api-slug: v1projectsresourcetestiampermissions-post
   description: Returns permissions that a caller has on the specified Project.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
   humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com////v1/projects/{resource}:testIamPermissions
-  tags: IAM
+  baseURL: ://cloudresourcemanager.googleapis.com//
+  tags: Orchestration, Google APIs, Management, Stack Network, API Service Provider,
+    API Provider, Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-resource-manager/v1projectsresourcetestiampermissions-post-openapi.md
-- name: Google Cloud Resource Manager API
-  x-api-slug: google-cloud-resource-manager-api
-  description: Google Cloud Platform provides resource containers such as Organizations
-    and Projects, that allow you to group and hierarchically organize other Cloud
-    Platform resources. This hierarchical organization lets you easily manage common
-    aspects of your resources such as access control and configuration settings. The
-    Google Cloud Resource Manager service enables you to programmatically manage these
-    resource containers.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Generic-GCP.png
-  humanURL: https://cloud.google.com/resource-manager/
-  baseURL: ://cloudresourcemanager.googleapis.com//
-  tags: IAM
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-resource-manager/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://google.cloud.pub.sub.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://google.cloud.resource.manager.stack.network
 - type: x-authentication
   url: https://cloud.google.com/resource-manager/docs/authorizing
 - type: x-code

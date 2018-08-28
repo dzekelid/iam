@@ -16,13 +16,13 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "9"
 x-alexaRank: "0"
 tags: IAM
-created: "2018-06-25"
-modified: "2018-06-25"
+created: "2018-08-27"
+modified: "2018-08-27"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-spanner/apis.md
 specificationVersion: "0.14"
 apis:
-- name: Google Cloud Spanner API Get IAM Policy
-  x-api-slug: google-cloud-spanner-api
+- name: Cloud Spanner - Get IAM Policy
+  x-api-slug: v1resourcegetiampolicy-post
   description: |-
     Gets the access control policy for a database resource. Returns an empty
     policy if a database exists but does not have a policy set.
@@ -31,13 +31,14 @@ apis:
     resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-spanner-global-scale-consistency_2x.png
   humanURL: https://cloud.google.com/spanner/
-  baseURL: ://spanner.googleapis.com////v1/{resource}:getIamPolicy
-  tags: IAM
+  baseURL: ://spanner.googleapis.com//
+  tags: Google APIs, Stack Network, API Service Provider, API Provider, Databases,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-spanner/v1resourcegetiampolicy-post-openapi.md
-- name: Google Cloud Spanner API Set IAM Policy
-  x-api-slug: google-cloud-spanner-api
+- name: Cloud Spanner - Set IAM Policy
+  x-api-slug: v1resourcesetiampolicy-post
   description: |-
     Sets the access control policy on a database resource. Replaces any
     existing policy.
@@ -46,13 +47,14 @@ apis:
     resource.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-spanner-global-scale-consistency_2x.png
   humanURL: https://cloud.google.com/spanner/
-  baseURL: ://spanner.googleapis.com////v1/{resource}:setIamPolicy
-  tags: IAM
+  baseURL: ://spanner.googleapis.com//
+  tags: Google APIs, Stack Network, API Service Provider, API Provider, Databases,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-spanner/v1resourcesetiampolicy-post-openapi.md
-- name: Google Cloud Spanner API Test IAM Permissions
-  x-api-slug: google-cloud-spanner-api
+- name: Cloud Spanner - Test IAM Permissions
+  x-api-slug: v1resourcetestiampermissions-post
   description: |-
     Returns permissions that the caller has on the specified database resource.
 
@@ -62,32 +64,17 @@ apis:
     permissions.
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-spanner-global-scale-consistency_2x.png
   humanURL: https://cloud.google.com/spanner/
-  baseURL: ://spanner.googleapis.com////v1/{resource}:testIamPermissions
-  tags: IAM
+  baseURL: ://spanner.googleapis.com//
+  tags: Google APIs, Stack Network, API Service Provider, API Provider, Databases,
+    Profiles, Relative Data, Service API
   properties:
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-spanner/v1resourcetestiampermissions-post-openapi.md
-- name: Google Cloud Spanner API
-  x-api-slug: google-cloud-spanner-api
-  description: 'Cloud Spanner is the first and only relational database service that
-    is both strongly consistent and horizontally scalable. With Cloud Spanner you
-    enjoy all the traditional benefits of a relational database: ACID transactions,
-    relational schemas (and schema changes without downtime), SQL queries, high performance,
-    and high availability. But unlike any other relational database service, Cloud
-    Spanner scales horizontally, to hundreds or thousands of servers, so it can handle
-    the highest of transactional workloads. With automatic scaling, synchronous data
-    replication, and node redundancy, Cloud Spanner delivers up to 99.999% (five 9s)
-    of availability for your mission critical applications. In fact, Google&rsquo;s
-    internal Spanner service has been handling millions of queries per second from
-    many Google services for years.'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/google-spanner-global-scale-consistency_2x.png
-  humanURL: https://cloud.google.com/spanner/
-  baseURL: ://spanner.googleapis.com//
-  tags: IAM
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/iam/master/_listings/google-cloud-spanner/openapi.md
 x-common:
+- type: x-api-gallery
+  url: http://google.cloud.source.repositories.api.gallery.streamdata.io
+- type: x-api-stack
+  url: http://google.cloud.spanner.stack.network
 - type: x-change-log
   url: https://cloud.google.com/spanner/docs/release-notes
 - type: x-code

@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Google Service Management
 x-complete: 1
@@ -61,4 +60,3 @@ paths:
           description: OK
       tags:
       - IAM
----
